@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  .exciting-text::after {
+    content: "<- now this *is* exciting!";
+    color: green;
+  }
+
+  .boring-text::after {
+    content: "<- BORING!";
+    color: red;
+  }
+  </style>
+</head>
+
+<body>
+  <p class="boring-text">Here is some good old boring text.</p>
+  <p>Here is some moderate text that is neither boring nor exciting.</p>
+  <p class="exciting-text">Contributing to MDN is easy and fun. Just hit the edit button to add new live samples, or improve existing samples.</p>
+</body>
+
+</html>
+

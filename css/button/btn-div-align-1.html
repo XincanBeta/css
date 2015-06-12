@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>button 和 div 能在一条线上基线（只是个比方）对齐吗？</title>
+  <style>
+    /**
+     * 结果是没有对齐
+     */
+
+    *{margin: 0; padding: 0;}
+
+    div{
+      display: inline-block;
+      height: 36px;
+      width: 38px;
+      background-color: rgba(222,11,22, 0.8);
+    }
+
+    button{
+      height: 36px;
+      width: 38px;
+      border: 1px solid #666;
+      line-height: 0;
+      vertical-align:baseline;
+    }
+  </style>
+</head>
+<body>
+
+<div>div</div>
+<button>Button</button>
+</body>
+</html>

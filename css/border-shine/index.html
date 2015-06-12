@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>发光边框</title>
+  <style>
+    /**
+     * 为全局所有input组件添加边框发光效果，添加如下选择器
+     * input[type=text]:focus,input[type=password]:focus,textarea:focus
+     */
+
+
+    .sdw:focus {
+      /**
+       * transition 控制了两种属性的（变化）过渡，用逗号分隔
+       */
+      transition: border linear .1s, box-shadow linear .2s;
+      /*-moz-transition: border linear .2s, -moz-box-shadow linear .5s;*/
+      /*-webkit-transition: border linear .2s, -webkit-box-shadow linear .5s;*/
+
+      outline: none;
+      border-color: rgba(241, 39, 242, .75);
+
+      /**
+       * 阴影有光晕效果
+       */
+      box-shadow: 0 0 8px rgba(241, 39, 232, .5);
+      /*-moz-box-shadow: 0 0 8px rgba(241, 39, 232, .5);*/
+      /*-webkit-box-shadow: 0 0 8px rgba(241, 39, 232, 3);*/
+    }
+  </style>
+</head>
+<body>
+  <input type="text" class="sdw"/>
+</body>
+</html>

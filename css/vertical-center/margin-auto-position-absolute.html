@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <style>
+    .wrap{
+      position: relative;
+      height: 100px;
+      background-color: rgba(22,11,44,0.4);
+      padding: 10px;
+    }
+
+    .elm {
+      /** 高度是必须的，可以是任意值 */
+      height: 20px;
+      /*line-height: 20px;*/
+      /** zhangxinxu 适用于 块级元素和 行内元素*/
+      /** 要垂直居中: top bottom */
+      /** 要水平居中: left right */
+      /** 定位方向值默认是 auto */
+      position: absolute;  top: 5px;;  bottom: 5px;
+      /*margin: auto;    *//* 有了这个就自动居中了 */
+      margin-top: auto; margin-bottom: auto;    /* 有了这个就自动居中了 */
+      outline: 1px dashed red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="elm">
+      垂直居中
+    </div>
+    <!--<span class="elm">hello</span>-->
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+html, body {
+  /*background: #15171A;*/
+
+  background: whiteSmoke;
+}
+
+form {
+  text-align: center;
+  margin-top: 45vh;
+}
+/*
+  这里 form 的高度(内容)根据其子元素高度自适应
+  注：另作 demo ，测试 label 作为内联元素，能够赋值宽高，以及 line-height 的具体作用
+  */
+
+form label {
+  text-transform: uppercase;
+  display: inline-block;
+  line-height: 40px;
+  height: 40px;
+  /*vertical-align: top;*/
+
+  color: #ddd;
+  cursor: pointer;
+}
+
+input[type="checkbox"].checkslider {
+  margin-left: 15px;
+  /*margin-top: 11px;*/
+
+  /* input 是有 outline 的，聚焦时就出现了 */
+  outline: none;
+  cursor: pointer;
+}
+/*没有选中的状态*/
+
+input[type="checkbox"].checkslider {
+  /* 给 ::after 参照用的 */
+
+  position: relative;
+  -webkit-appearance: none;
+  /* inline-block 没什么意义 */
+  /*display: inline-block;*/
+
+  /* 长方形 */
+  height: 16px;
+  width: 38px;
+  border-radius: 100px;
+  background-color: #E87460;
+  /*对任何属性的变化都增加过渡效果*/
+
+  /* 0.3s 简直就是标配了 */
+  transition: all 0.3s ease;
+
+  /*-webkit-backface-visibility: hidden;*/
+
+}
+/*选中时改下背景色；注意这里又是伪类
+点击 label 能更替 :checked 伪类了
+*/
+
+input[type="checkbox"].checkslider:checked {
+  background-color: #6FFDAF;
+}
+/*用伪元素来生成图形*/
+
+input[type="checkbox"].checkslider:after {
+  content: "";
+  width: 22px;
+  height: 22px;
+  /*-webkit-box-shadow: 0p 0px 1px #fff, inset 10px 0px 10px #000;*/
+  /*无效*/
+
+  /*box-shadow: 0p 0px 1px #fff, inset 10px 0px 10px #000;*/
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  top: -3px;
+  left: -2px;
+  position: absolute;
+  background: #fff;
+  transition: all .25s ease;
+}
+
+input[type="checkbox"].checkslider:checked:after {
+  left: 16px;
+  /* 可以复用 未选中状态的样式 */
+  /*position: absolute;*/
+  /*background: #fff;*/
+}
+
+
+/* 普通点击无法激活 label 的 :active
+可以通过 chrome inspect element 右键 label 元素的 force element state 来查看到效果 */
+label:active input[type="checkbox"].checkslider:checked:after {
+    /* 此处调整了 after 的宽度和  偏移大小 */
+    width: 28px;
+    left: 10px;
+  }
+label:active input[type="checkbox"].checkslider:after {
+  width: 28px;
+  left: -2px;
+}

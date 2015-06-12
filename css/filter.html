@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>毛玻璃效果</title>
+  <style>
+    /*.wrap {
+      -webkit-filter: blur(8px) contrast(0.4) brightness(1.4);
+      filter: blur(8px) contrast(0.4) brightness(1.4);
+      clip: rect(205px 572px 516px 351px);
+      width: 500px;;
+    }
+
+    .content {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      display: inline-block;
+    }*/
+
+    .blur {
+      filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+
+      -webkit-filter: blur(10px); /* Chrome, Opera */
+      -moz-filter: blur(10px);
+      -ms-filter: blur(10px);
+      filter: blur(10px);
+
+      filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+    }
+
+
+  </style>
+</head>
+<body>
+
+<img src="../img/200x200.gif" class="blur" />
+
+
+<!--
+<div class="wrap">
+  asdfasdfsadfasdfaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+</div>
+<div class="content">
+  asdfasdfsadfasdf
+</div>-->
+</body>
+</html>

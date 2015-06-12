@@ -1,0 +1,243 @@
+.wrap {
+  float: left;
+  padding: 30px;
+  outline: 1px dashed #EEEEEE;
+  overflow: hidden;
+
+}
+.wrap.first {
+  clear: left;
+  outline: 1px dashed rgba(220,0,0, 0.8);
+}
+
+.warn{
+  color: red;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  overflow: auto;
+}
+
+
+/**
+ * 单侧水平阴影
+ */
+.eg2-1 {
+  box-shadow: 1px 0 #666;
+}
+
+.eg2-2 {
+  box-shadow: 4px 0 #666;
+}
+
+.eg2-3 {
+  box-shadow: -1px 0 #666;
+}
+
+.eg2-4 {
+  box-shadow: -4px 0 #666;
+}
+
+/**
+ * 单侧垂直阴影
+ */
+.eg3-1 {
+  box-shadow: 0 1px #666;
+}
+
+.eg3-2 {
+  box-shadow: 0 4px #666;
+}
+
+.eg3-3 {
+  box-shadow: 0 -1px #666;
+}
+
+.eg3-4 {
+  box-shadow: 0 -4px #666;
+}
+
+
+/**
+ * 阴影模糊半径
+ */
+.eg4-1 {
+  box-shadow: 0 0 1px #666;
+}
+
+.eg4-2 {
+  box-shadow: 0 0 6px #666;
+}
+
+.eg4-3 {
+  box-shadow: 0 0 10px #666;
+}
+
+.eg4-4 {
+  box-shadow: 0 0 20px #666;
+}
+
+.eg4-5 {
+  box-shadow: 0 0 50px #666;
+}
+
+.eg4-6 {
+  box-shadow: 0 0 100px #666;
+}
+
+
+/**
+ * 阴影扩展尺寸
+ */
+.eg5-1 {
+  box-shadow: 0 0 0 1px #666;
+}
+
+.eg5-2 {
+  box-shadow: 0 0 0 4px #666;
+}
+
+.eg5-3 {
+  box-shadow: 0 0 1px 4px #666;
+}
+
+.eg5-4 {
+  box-shadow: 0 0 1px 10px #666;
+}
+
+.eg5-5 {
+  box-shadow: 0 0 5px 10px #666;
+}
+
+.eg5-6 {
+  box-shadow: 0 0 10px 10px #666;
+}
+
+.eg5-7 {
+  box-shadow: 0 0 20px 10px #666;
+}
+
+.eg5-8 {
+  box-shadow: 0 0 20px 0  #666;
+}
+
+.eg5-9 {
+  box-shadow: 0 0 100px 10px #666;
+}
+
+.eg5-10 {
+  box-shadow: 0 0 100px  #666;
+}
+
+
+.eg5-11 {
+  box-shadow: 0 0 10px 1px #666;
+}
+
+/**
+ * 综合例子
+ */
+.eg6-1 {
+  box-shadow: 4px 4px 0 0 #666;
+}
+
+.eg6-2 {
+  box-shadow: 4px 0 0 2px #666;
+}
+
+.eg6-3 {
+  box-shadow: 4px 4px 0 2px #666;
+}
+
+.eg6-4 {
+  box-shadow: 1px 1px 0 2px #666;
+}
+
+.eg6-5 {
+  box-shadow: 4px 4px 6px -6px #666;
+}
+
+.eg6-6 {
+  box-shadow: 4px 4px 6px 0 #666;
+}
+
+.eg6-7 {
+  box-shadow: 1px 1px 6px 0 #666;
+}
+
+.eg6-8 {
+  box-shadow: 2px 2px 6px 0 #666;
+}
+
+.eg6-9 {
+  box-shadow: 3px 3px 6px 0 #666;
+}
+
+.eg6-10 {
+  box-shadow: 1px 5px 6px 0 #666;
+}
+
+.eg6-11 {
+  box-shadow: 1px 6px 6px 0 #666;
+}
+
+.eg6-12 {
+  box-shadow: 1px 6px 6px 1px #666;
+}
+
+.eg6-13 {
+  box-shadow: 1px 6px 6px -1px #666;
+}
+
+.eg6-14 {
+  box-shadow: 1px 6px 6px -3px #666;
+}
+
+.eg6-15 {
+  box-shadow: 1px 6px 6px -6px #666;
+}
+
+.eg6-16 {
+  box-shadow: 1px 3px 6px -6px #666;
+}
+
+.eg6-17 {
+  box-shadow: 1px 4px 6px -6px #666;
+}
+
+.eg6-18 {
+  box-shadow: 1px 6px 0 -6px #666;
+}
+
+.eg6-19 {
+  box-shadow: 1px 6px 1px -6px #666;
+}
+
+.eg6-20 {
+  box-shadow: 1px 6px 3px -6px #666;
+}
+
+.eg6-21 {
+  box-shadow: 1px 6px 10px -6px #666;
+}
+
+.eg6-22 {
+  box-shadow: 1px 6px 4px 0 #666;
+}
+
+.eg7-1 {
+  border: 1px solid transparent;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.eg7-2 {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.eg7-3 {
+  box-shadow: 0 1px 1px #666;
+}
+
+

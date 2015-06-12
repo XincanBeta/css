@@ -1,0 +1,18 @@
+.app-toolbar-btn {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 5px 10px;
+  position: relative;
+  border-radius: 3px;
+  border-color: #dadada;
+  border-width: 1px;
+  color: #717171;
+  background-color: #fafafa;
+  outline: none; }
+  .app-toolbar-btn:hover {
+    color: #717171;
+    background-color: #ededed;
+    border-color: #c6c6c6; }
+
+/*# sourceMappingURL=btn.css.map */

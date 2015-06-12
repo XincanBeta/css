@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>空心圆</title>
+  <style>
+    .circle {
+      position: relative;
+      height: 100px;
+      width: 100px;
+      border-radius: 50px;
+      background: #000;
+      margin-bottom: 20px;;
+    }
+
+    .circle div {
+      position: relative;
+      height: 90px;
+      width: 90px;
+      background: #fff;
+      border-radius: 45px;
+      left: 5px;
+      top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="circle"></div>
+
+
+<!--那么，空心的圆，怎么实现呢？只需要再这个圆里面再画一个圆就可以了-->
+<div class="circle">
+  <div></div>
+</div>
+
+</body>
+</html>

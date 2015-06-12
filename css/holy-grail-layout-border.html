@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>两边固定，中间自适应</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    div {box-sizing: border-box; }
+    .wrapper{
+      padding: 0 20px;;
+      border: solid black;
+      border-width: 0 300px 0 200px;
+      outline: 1px dashed red;
+      /*overflow: auto;*/
+    }
+    .column{float: left; height: 300px;
+      position: relative;}
+    .column:nth-child(1) {
+      width: 100%;
+      background-color: #18a78c;
+      border: 1px dashed black;
+    }
+    .column:nth-child(2) {
+      width: 200px;
+      margin-left: -100%;
+      background-color: #FFDE00;
+      left: -220px;
+    }
+    .column:nth-child(3) {
+      width: 300px;
+      margin-right: -280px;
+      background-color: #6599FF}
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="column one">one：外面两层是固定的宽度，而最内层是流动的</div>
+  <div class="column two">two</div>
+  <div class="column three">three</div>
+</div>
+
+</body>
+</html>

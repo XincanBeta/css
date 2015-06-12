@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>用 REM 进行布局</title>
+  <link rel="stylesheet" href="basic.css"/>
+</head>
+<body>
+  <!--
+    - 类名是强耦合的，当要调整大小时，不得不修改 html 中的类名
+  -->
+  <div class="rem-1">变大</div>
+  <div class="rem-1-4">变大</div>
+  <div class="rem-1-6">变大</div>
+  <div class="rem-2">变大</div>
+  <div class="rem-2-4">变大</div>
+
+  <!--
+    - 松耦合
+  -->
+  <div class="default-text">变大</div>
+  <div class="warn-text">变大</div>
+  <div class="danger-text">变大</div>
+
+</body>
+</html>

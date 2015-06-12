@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>溢出抑制浮动</title>
+  <style>
+    #main {
+      /*width: 100%;*/
+      border: 2px dashed gray;
+      background-color: #9ac;
+      overflow: auto;
+    }
+
+    .column { float: left; width: 28%; height: 300px; padding: 0 1%; margin: 0 1%; }
+
+    .column:nth-child(1) { background-color: #18a78c }
+
+    .column:nth-child(2) { background-color: #FFDE00 }
+
+    .column:nth-child(3) { background-color: #6599FF }
+  </style>
+</head>
+<body>
+<div id="main">
+  <div class="column"></div>
+  <div class="column">在 #main 元素上添加 overflow 属性，可以自适应包裹浮动的各栏</div>
+  <div class="column"></div>
+</div>
+</body>
+</html>

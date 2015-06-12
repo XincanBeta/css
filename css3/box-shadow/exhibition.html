@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="exhibition.css"/>
+</head>
+<body>
+
+<!--单侧水平阴影-->
+<div class="wrap first">
+  <div class="eg2-1">水平阴影位置 1px，单侧、右侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg2-2">水平阴影位置 4px，单侧、右侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg2-3">水平阴影位置 -1px，单侧、左侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg2-4">水平阴影位置 -4px，单侧、左侧阴影</div>
+</div>
+
+<!--单侧垂直阴影-->
+<div class="wrap first">
+  <div class="eg3-1">垂直阴影位置 1px，单侧、下侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg3-2">垂直阴影位置 4px，单侧、下侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg3-3">垂直阴影位置 -1px，单侧、上侧阴影</div>
+</div>
+
+<div class="wrap">
+  <div class="eg3-4">垂直阴影位置 -4px，单侧、上侧阴影</div>
+</div>
+
+<!--
+  阴影模糊半径
+-->
+<div class="wrap first">
+  <div class="eg4-1">
+    阴影模糊半径：<br/>
+    <span class="warn">不允许负值</span>
+    box-shadow: 0 0 1px #666; <br/>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg4-2">阴影模糊半径：<br/>
+    box-shadow: 0 0 6px #666;<br/>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg4-3">阴影模糊半径：<br/>
+    box-shadow: 0 0 10px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg4-4">阴影模糊半径：<br/>
+    box-shadow: 0 0 20px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg4-5">阴影模糊半径：<br/>
+    box-shadow: 0 0 50px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg4-6">阴影模糊半径：<br/>
+    box-shadow: 0 0 100px #666;
+  </div>
+</div>
+
+<!--
+    阴影扩展尺寸
+-->
+<div class="wrap first">
+  <div class="eg5-1">
+    阴影扩展半径：<br/>
+    <span class="warn">允许负值</span>
+    box-shadow: 0 0 0 1px #666;<br/>
+    指定阴影的宽度，不具有模糊效果 <br/>
+    看起来很 border 效果相同
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-2">
+    阴影扩展半径：<br/>
+    box-shadow: 0 0 0 4px #666;<br/>
+    ”边框“变厚
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-3">
+    阴影扩展半径：<br/>
+    box-shadow: 0 0 1px 4px #666;<br/>
+    增加了 1px 的模糊 <br/>
+    现在”边框“具有 3/4 实宽和 1/4 模糊
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-4">阴影扩展半径：<br/>
+    box-shadow: 0 0 1px 10px #666;<br/>
+    现在”边框“具有 9/10 实宽和 1/10 模糊
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-5">阴影扩展半径：<br/>
+    box-shadow: 0 0 5px 10px #666;<br/>
+    现在”边框“具有 5/10 实宽和 5/10 模糊
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-6">阴影扩展半径：<br/>
+    box-shadow: 0 0 10px 10px #666;<br/>
+    现在”边框“具有 0/10 实宽和 10/10 模糊
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-7">阴影扩展半径：<br/>
+    box-shadow: 0 0 20px 10px #666;<br/>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-8">阴影扩展半径：<br/>
+    box-shadow: 0 0 20px 0 #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg5-9">阴影扩展半径：<br/>
+    box-shadow: 0 0 100px 10px #666;
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="eg5-10">阴影扩展半径：<br/>
+    box-shadow: 0 0 100px #666;
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="eg5-11">阴影扩展半径：<br/>
+    box-shadow: 0 0 4px 1px #666;
+  </div>
+</div>
+
+
+<!--
+    综合例子
+-->
+<div class="wrap first">
+  <div class="eg6-1">
+    综合例子：<br/>
+    box-shadow: 4px 4px 0 0 #666;<br/>
+    <span class="warn">1）前两个参数与第四个参数作用是相同的，都是增加阴影（<em>类似边框</em>）效果；<br/>
+      2）这两种参数具有累加效果</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-2">
+    综合例子：<br/>
+    box-shadow: 4px 0 0 2px #666; <br/>
+    <span class="warn">
+      1）如果水平方向或垂直方向大于第四个参数（阴影半径），水平方向或垂直方向只有单侧有阴影 <br/>
+      2) 如果第四个参数（阴影半径）要大于 水平方向或垂直方向，那么 水平方向 或 垂直方向的 两个方向都会有阴影
+      </span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-3">
+    综合例子：<br/>
+    box-shadow: 4px 4px 0 2px #666; <br/>
+    <span class="warn">
+      当水平和垂直大于阴影半径时，水平或垂直只有单侧具有阴影
+    </span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-4">
+    综合例子：<br/>
+    box-shadow: 1px 1px 0 2px #666;
+     <span class="warn">
+      当水平和垂直小于阴影半径时，水平或垂直双侧同时都具有阴影
+    </span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-5">
+    综合例子：<br/>
+  box-shadow: 4px 4px 6px -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-6">
+    综合例子：<br/>
+    box-shadow: 4px 4px 6px 0 #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-7">
+    综合例子：<br/>
+    box-shadow: 1px 1px 6px 0 #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-8">
+    综合例子：<br/>
+    box-shadow: 2px 2px 6px 0 #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-9">
+    综合例子：<br/>
+    box-shadow: 3px 3px 6px 0 #666;
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="eg6-10">
+    综合例子：<br/>
+    box-shadow: 1px 5px 6px 0 #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-11">
+    综合例子：<br/>
+    box-shadow: 1px 6px 6px 0 #666; <br/>
+    <span class="warn">
+      1)模糊阴影与水平（垂直）的关系：当两者相同时，只会保留一侧的阴影，另一侧`空白`；
+      2)当水平变小，模糊阴影不变，那么水平另一侧模糊阴影效果增大
+    </span>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <div class="eg6-12">
+    综合例子：<br/>
+    box-shadow: 1px 6px 6px 1px #666; <br/>
+    <span class="warn"> 当水平与半径相等时，水平两侧都会出现</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-13">
+    综合例子：<br/>
+    box-shadow: 1px 6px 6px -1px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-14">
+    综合例子：<br/>
+    box-shadow: 1px 6px 6px -3px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-15">
+    综合例子：<br/>
+    box-shadow: 1px 6px 6px -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-16">
+    综合例子：<br/>
+    box-shadow: 1px 3px 6px -6px #666; <br/>
+    <span class="warn"> 负半径能减掉阴影</span>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-17">
+    综合例子：<br/>
+    box-shadow: 1px 4px 6px -6px #666; <br/>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-18">
+    综合例子：<br/>
+    box-shadow: 1px 6px 0 -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-19">
+    综合例子：<br/>
+    box-shadow: 1px 6px 1px -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-20">
+    综合例子：<br/>
+    box-shadow: 1px 6px 3px -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-21">
+    综合例子：<br/>
+    box-shadow: 1px 6px 10px -6px #666;
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg6-22">
+    综合例子：<br/>
+    box-shadow: 1px 6px 4px 0 #666;
+  </div>
+</div>
+
+
+<!--
+    + border
+-->
+<div class="wrap first">
+  <div class="eg7-1">
+    border: 1px solid transparent; <br/>
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg7-2">
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="eg7-3">
+    box-shadow: 0 1px 1px #666;
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

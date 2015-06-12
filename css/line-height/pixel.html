@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title></title>
+  <style>
+    .lh{
+      /**
+       * 首先，行间距只对一个元素内的多行有作用，元素之间由 盒模型本身控制
+       * 当 line-height = 0，该元素内的多行都会重叠在一起
+       */
+      line-height: 20px;
+    }
+    h1 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    #footer {
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1 class="lh">
+  Lorem ipsum dolor sit amet, consetetur sadipscing elitr Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</h1>
+
+<p class="lh">sed diam nonumy eirmod tempor invidunt ut labore et aliquyam erat, sed diam nonumy eirmod tempor invidunt ut
+  labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et sed diam voluptua. At vero eos et accusam et
+  justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+
+<div class="lh" id="footer">
+
+  dolore magna aliquyam erat, sed diam voluptua no sea accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+  dolor sit amet, consetetur sadipscing elitr aliquyam erat, sed diam voluptua. At vero eos et sed diam voluptua. At vero eos et accusam et
+</div>
+</body>
+</html>

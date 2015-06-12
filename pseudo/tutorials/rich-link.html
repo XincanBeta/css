@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  li {
+    margin: 1em;
+  }
+
+  a {
+    text-decoration: none;
+    border-bottom: 3px dotted navy;
+  }
+
+  a::after {
+    content: " (" attr(id) ")";
+  }
+
+  #moz::before {
+    content: url(https://mozorg.cdn.mozilla.net/media/img/favicon.ico);
+  }
+
+  #mdn::before {
+    content: url(https://mdn.mozillademos.org/files/7691/mdn-favicon16.png);
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a id="moz" href="javascript:void(0);">
+        Mozilla Home Page</a></li>
+    <li><a id="mdn" href="javascript:void(0);">
+        Mozilla Developer Network</a></li>
+  </ul>
+</body>
+
+</html>

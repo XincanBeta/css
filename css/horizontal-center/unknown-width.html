@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>使宽度不定的 div 水平居中</title>
+  <style>
+    #outer {
+      background:#f66;
+
+      /* 对子孙元素中包含的`行内元素`（比如文本、img 等）有效 */
+      text-align:center;
+    }
+
+    #inner {
+      /* 让 div 变成行内元素 */
+      display:inline;
+      color:#fff;
+      background:#66f;
+    }
+
+  </style>
+</head>
+<body>
+
+<!--
+
+div {
+	width:100px;
+	margin:0 auto;
+}
+
+如果div宽度不定的话，如何居中呢？同样，我们知道行内元素居中也很简单，只要它的父元素设置了text-algin:center就可以了。
+所以，我们可以把宽度不定的div设置成行内元素，然后设置它的父元素text-algin:center就可以了，如：
+-->
+
+<div id="outer">
+  <div id="inner">宽度不定的div</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>浮动特性演示</title>
+  <style>
+  .ex{ height: 200px; border: 1px solid black; border-:  }
+  .wrap {
+    border: 1px dashed #fcb;
+  }
+
+  .wrap > div {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #ccc;
+  }
+
+  .pull-left {
+    float: left;
+  }
+
+  .pull-right {
+    float: right;
+  }
+  /*pseudo element is inline by default*/
+
+  .clearfix.wrap::after {
+    content: ' ';
+    display: block;
+    clear: both;
+  }
+  </style>
+</head>
+<!--
+浏览器永远不会自动清除浮动，因为这浮动特性不是 bug，而是一个功能
+-->
+<body>
+  <div class="ex">
+    <p>浮动特性一：当父元素只包含浮动元素时，父元素会塌陷</p>
+    <div class="wrap">
+      <!-- <div class="pull-left"></div> -->
+      <!-- <div class="pull-right"></div> -->
+    </div>
+  </div>
+  <!-- <p>添加了 clearfix</p> -->
+</body>
+
+</html>

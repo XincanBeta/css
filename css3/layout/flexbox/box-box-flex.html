@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .wrapper{height: 400px; width: 960px;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+
+      outline: 1px dashed blue;}
+    .wrapper > div {height: 200px; outline: 1px dashed red;}
+    .main{
+      -webkit-box-flex: 1;
+    }
+    .sidebar{ width: 16em}
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="main">main</div>
+  <div class="sidebar">sidebar</div>
+</div>
+</body>
+</html>

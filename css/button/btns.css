@@ -1,0 +1,35 @@
+
+.app-toolbar-btn {
+    display: inline-block;
+    height: 36px;
+    width: 38px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 5px 10px;
+    position: relative;
+    border-radius: 3px;
+    border-color: #dadada;
+    border-width: 1px;
+    color: #717171;
+    background-color: #fafafa;
+    outline: none;
+}
+
+.test {
+    background-color: #444;
+    display: inline-block;
+    /*padding: 3px;*/
+    /*height: 30px;*/
+    /*width: 32px;*/
+    /*overflow: hidden;*/
+}
+
+.app-toolbar-btn-group {
+    background-color: #444;
+    display: inline-block;
+    padding: 3px;
+    height: 30px;
+    width: 32px;
+    /*overflow: hidden;*/
+}

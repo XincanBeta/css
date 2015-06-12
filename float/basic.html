@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  .parent {
+    background-color: #50d07d;
+    padding: 10px;
+    height: 400px;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .child1 {
+    width: 80px;
+    height: 80px;
+    background: #d02552;
+    float: left;
+    /*margin-right: 20px;*/
+  }
+
+  .child2 {
+  	padding: 40px;
+    background: #b2cecf;
+    height: 100px;
+  }
+  </style>
+</head>
+<!--
+场景：child 1 是浮动的，child 2 是 non-positon，他们的 parent 是 non-position 且有固定高度的
+有三个角色：float box、non-position box、content
+float box 脱离的文档流（flow）
+
+non-positioin box 会忽视其上下位置上存在 float box，依然保持自己原本的位置和大小；
+这可能造成的现象是 float box 与 non-position box 发生重叠，float box 浮在 non-position box 上面
+但是 non-position box 里面的文本（如果有的话，可以统称为 content）会受到 float box 的影响，文本元素会避开 float box 部分并环绕在其旁边
+
+
+
+-->
+<body>
+  <div class="parent">
+    <div class="child1"></div>
+    <div class="child2">This text flows around the &lt;child 1> box. The &lt;child 2> box that holds the text doesn't. </div>
+  </div>
+</body>
+
+</html>

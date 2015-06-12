@@ -1,0 +1,50 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+Body {
+  background-color: #eeeeee;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  color: #545454;
+  font-weight: 800;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.3);
+}
+
+#hoverme {
+  width: 280px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 不是 display:none ，而是 opacity ，为了动画效果吗 */
+#hoverme p {
+  opacity: 0;
+  transition: opacity 0.2s linear, margin 0.2s linear;
+  font-family: Georgia, serif;
+  font-style: italic;
+  color: #666666;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#hoverme:hover p {
+  opacity: 1;
+  /*要不破坏容器的尺寸，mt 增加，mb 就要减回去*/
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#hoverme:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  /*
+  The background-size value takes a length, a percentage, or one of the key terms cover, contain, or auto, with auto being the default.
+
+  background-szie 推荐单独写出来的
+  */
+
+  .block {
+    height: 300px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+  }
+
+  .bg {
+    background: url(../img/1.png) no-repeat;
+    background-color: WhiteSmoke;
+  }
+
+  .bg-width {
+    /* 单个值是背景图的宽度值，高度会自适应*/
+    background-size: 200px;
+  }
+
+  .bg-height {
+    /*
+    如果想设置高度值，让宽度自适应，那么对宽度的位置要设置 auto */
+    background-size: auto 200px;
+  }
+
+  /*如果有多个背景图，并且要分别设置背景大小，那么用 逗号分隔
+  background-size: 100px auto, auto auto;
+
+  */
+
+  </style>
+</head>
+
+<body>
+  <div class="block bg bg-width"></div>
+  <div class="block bg bg-height"></div>
+</body>
+
+</html>

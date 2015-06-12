@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css"> </head>
+<style>
+/*general style*/
+
+html,
+body {
+  background-color: WhiteSmoke;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.paper {
+  width: 140px;
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 50px 0 0 30%;
+  background-color: #fff;
+}
+
+/* 把盒子的影子移到盒子的右边，把影子完全暴露出来 */
+.shadow-offset {
+  /*
+    第一个参数是水平偏移量，正值右偏，负值左偏
+    第二个参数是垂直偏移量，正值下移，负值上移
+  */
+  box-shadow: 300px 0px 0 0 rgba(72, 72, 72, 0.1);
+}
+
+.shadow-blur{
+  /*第三个参数是阴影的模糊度，只有正值，越大越模糊*/
+  box-shadow: 300px 0px 3px 0 rgba(72, 72, 72, 0.1);
+}
+
+.shadow-distance{
+  /*第四个参数是阴影的整体大小，正值变大，负值变小*/
+  box-shadow: 300px 0px 0px 5px rgba(72, 72, 72, 0.1);
+}
+
+/* 第五个参数是阴影的颜色 */
+
+
+/*
+  inset 是内阴影，当不声明 inset 默认就是外阴影
+  inset 时，第一个参数是水平偏移量，如让盒子往右偏移 20px，从而让内阴影暴露出来
+*/
+.shadow-inset{
+  box-shadow: inset 0px 0px 0px 5px rgba(72, 72, 72, 0.1)  ;
+}
+
+</style>
+
+<body>
+  <div class="paper shadow-offset"></div>
+  <div class="paper shadow-blur"></div>
+  <div class="paper shadow-distance"></div>
+  <div class="paper shadow-inset"></div>
+</body>
+
+</html>

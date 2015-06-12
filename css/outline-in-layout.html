@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>outline 轮廓</title>
+  <style>
+    body, div{ margin: 0; padding: 0;}
+    .wrapper{width: 960px;margin: 0 auto;}
+    .wrapper > div{
+      width: 320px;
+      height: 200px;
+      float: left;
+      /* 边框在轮廓（outline）的内部 */
+      border: 10px solid #aaa;
+      /* 在设计布局时，标清元素轮廓 */
+      outline: 1px dashed red;
+      /* padding 用于文字排版 */
+      padding: 10px;
+      /* 再添加 padding 后，box-sizing 保持宽度大小仍为 width 属性值 */
+      box-sizing: border-box;
+    }
+    .wrapper > div:nth-child(1) { background-color: #18a78c}
+    .wrapper > div:nth-child(2) { background-color: #FFDE00}
+    .wrapper > div:nth-child(3) { background-color: #6599FF}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div></div>
+    <div><p>outline 轮廓，与 border 边框不同： outline 不参与布局</p></div>
+    <div></div>
+  </div>
+</body>
+</html>

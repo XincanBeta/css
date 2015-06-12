@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <style type="text/css">
+    *{padding: 0; margin: 0}
+
+    .demo-parent { width: 400px; height: 100px; line-height: 30px; background: #fbeecb; }
+    .demo-child { width: 100%; height: 30px; background: pink; }
+
+    .demo-parent-margin {margin:10px;}
+    .demo-parent-padding {padding:10px;}
+    .demo-parent-border {border:5px solid #FF486B;}
+
+    .row-space{
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+<div class="demo-parent">
+  I'm parent, with a fixed width
+  <div class='demo-child'>inherit parent width</div>
+</div>
+
+<div class="row-space"></div>
+
+<div class="demo-parent demo-parent-padding demo-parent-margin demo-parent-border">
+  I'm parent, with a fixed width
+  <div class='demo-child'>inherit parent's width, woo! but padding、border、margin</div>
+</div>
+
+<div class="row-space"></div>
+
+<div class="demo-parent demo-parent-padding" style="width: 100%;">
+  I'm parent, with "width:100%, padding: 10px" which means width my size equals a page width + 20 padding(left+right)
+  <div class='demo-child '>inherit parent width, I'have a page width</div>
+</div>
+
+<div class="row-space"></div>
+
+
+
+
+
+
+</body>
+</html>

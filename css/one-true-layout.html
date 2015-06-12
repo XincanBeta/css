@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>浮动布局：更换位置</title>
+  <style>
+    body, div{margin: 0; padding: 0; box-sizing: border-box;}
+    .column { float: left; padding: 0 20px; margin: 0 20px; height: 400px; outline: 1px dashed red;}
+    .one { width: 300px;}
+    .two, .three { width: 200px;}
+    /* style basic */
+    .column:nth-child(1) { background-color: #18a78c}
+    .column:nth-child(2) { background-color: #FFDE00}
+    .column:nth-child(3) { background-color: #6599FF}
+    /* 交换 one 和 two 的位置 */
+    .one { margin-left: 260px; }
+    .two { margin-left: -560px; }
+  </style>
+</head>
+<body>
+  <div class="column one">one</div>
+  <div class="column two">two：技巧：让浮动的排列顺序独立于文档源代码的顺序</div>
+  <div class="column three">three</div>
+</body>
+</html>

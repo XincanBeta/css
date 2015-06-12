@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>height:inherit 与 height:100% 区别</title>
+  <style>
+    .outer {
+      display: inline-block;
+      height: 200px;
+      width: 40%;
+      border: 5px solid #cd0000;
+    }
+
+    .height-100 {
+      position: absolute;
+      height: 100%;
+      width: 200px;
+      background-color: #beceeb;
+    }
+
+    .height-inherit {
+      position: absolute;
+      height: inherit;
+      width: 200px;
+      background-color: #beceeb;
+    }
+  </style>
+</head>
+<body>
+<div class="outer">
+  <div class="height-100"></div>
+</div>
+<div class="outer">
+  <div class="height-inherit">inherit 实现了高度自适应，并且省去了 父元素的 relative </div>
+</div>
+</body>
+</html>

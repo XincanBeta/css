@@ -1,0 +1,28 @@
+$normal-font-size: 2rem;
+
+html{font-size: 10px;}
+
+.rem-1{font-size: 1rem;}
+.rem-1-4{font-size: 1.4rem;}
+.rem-1-6{font-size: 1.6rem;}
+.rem-2{font-size: 2rem;}
+.rem-2-4{font-size: 2.4rem;}
+
+
+.default-text{
+  font-size: $normal-font-size;
+}
+
+.warn-text{
+  font-size: $normal-font-size * 1.4;
+}
+
+.danger-text{
+  font-size: $normal-font-size * 2;
+}
+
+
+
+
+
+

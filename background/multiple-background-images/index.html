@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 多背景图</title>
+  <style>
+  .block {
+    height: 500px;
+  }
+  /*
+  多背景图有 z-index 顺序，即层叠顺序：
+  第一个声明的图置顶，最后一个声明的图在最下面
+  （原理：浏览器从右往左解析样式，所以最后一个声明的先渲染出来）
+
+  但若有背景色的话，背景色是最下层的
+  */
+
+  .bg {
+    background:
+      url(../img/3.jpg) no-repeat 0 0,
+      url(../img/2.png) no-repeat 0 0,
+      url(../img/1.png) no-repeat 0 0;
+
+    /*
+    background-color 如果放在 background 上面，
+    会被 background 对背景色的默认设置所覆盖
+    因为 background 是8 个属性的缩写
+    */
+    background-color: WhiteSmoke;
+
+    /*
+    background 默认值如下：
+    background-color: transparent;
+    background-image: none;
+    background-position: 0 0;
+    background-size: auto;
+    background-repeat: repeat;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: scroll;
+
+    */
+
+  }
+  </style>
+</head>
+
+<body>
+  <div class="block bg"></div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<!--UISwitch 通过 bower 可以安装，github 开源项目 checkbox -->
+
+
+<body>
+  <div class="wrapper">
+    <h1>CSS3 UISwitch Example</h1>
+    <section id="fields" class="fields section">
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch">
+        <h6>Off (unchecked)</h6> </div>
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch" checked>
+        <h6>On (checked)</h6> </div>
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch" disabled>
+        <h6>Disabled Off</h6> </div>
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch" checked disabled>
+        <h6>Disabled On</h6> </div>
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch custom">
+        <h6>Custom</h6> </div>
+      <div class="fields__item">
+        <input type="checkbox" class="uiswitch my-switch">
+        <h6>Custom</h6> </div>
+    </section>
+    <section id="usage" class="section">
+      <p>It's a one liner!</p> <pre><code>&lt;input type="checkbox" class="uiswitch"&gt;</code></pre>
+      <p>Or just use SCSS and customize it too!</p> <pre><code>import 'uiswitch';
+
+$uiswitch-thumb-tint: #ffffff;
+$uiswitch-on-tint: red;</code></pre> </section>
+  </div>
+</body>
+
+</html>

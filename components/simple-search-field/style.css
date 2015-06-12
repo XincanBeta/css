@@ -1,0 +1,72 @@
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);*/
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans);*/
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+body {
+  text-align: center;
+}
+
+#box {
+  display: inline-block;
+  margin-top: 15%;
+}
+
+input {
+  float: right;
+  border-radius: .2em;
+}
+
+input[type=search] {
+  background-color: #FFF;
+  border: 1px solid #ededed;
+  padding: 10px;
+  border-radius: 2px;
+  width: 200px;
+  outline: none;
+  margin-right: 7px;
+  transition: all .2s;
+}
+
+input[type=search]:focus {
+  width: 400px;
+}
+
+input[type=submit] {
+  background-color: #ce5043;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
+  width: 37px;
+  border: 1px solid #a44035;
+  outline: none;
+  background-image: url(http://www.pixentral.com/pics/1f8HUdms8O7drEfTM5xB0Z6v49cBO0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+
+input[type=submit]:hover {
+  background-color: #a44035;
+  /*background-image: url(http://www.pixentral.com/pics/1f8HUdms8O7drEfTM5xB0Z6v49cBO0.png);*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+  /*background-size: 14px;*/
+}
+
+::-webkit-input-placeholder {
+  font-family: 'Open Sans', sans-serif;
+}
+
+input[type=search]:focus {
+  border: 1px solid #ce5043;
+  padding-left: 40px;
+  background: url(http://www.pixentral.com/pics/1STKFxdRurTyZ7VsJsAEMNUu8AZ1.png);
+  background-position: 13px center;
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+

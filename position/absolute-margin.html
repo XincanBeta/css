@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    .abs {
+      position: absolute;
+    }
+
+    .outer{
+      width: 400px;
+      height: 400px;
+    }
+
+    .bar {
+      width: 400px;
+      height: 400px;
+      margin-left: 50px;
+      outline: 1px dashed blue;
+    }
+
+    .foo {
+      width: 100px;
+      height: 100px;
+      outline: 1px dashed red;
+    }
+
+    .img {
+      width: 300px;
+      margin: 20px 0 0 20px;
+      outline: 1px dashed #008000;
+    }
+  </style>
+
+</head>
+<body>
+
+<div style="margin-left: 50px; width: 100px; height: 100px; outline: 1px dashed blue;">
+  <div
+    style="width: 200px; height: 200px; outline: 1px dashed red;
+    position: absolute; left: 0; margin-left: -30px;"></div>
+</div>
+
+<!--
+<div class="bar">
+  <div class="foo"></div>
+  <div style="height: 50px; outline: 1px dashed orange;">position 脱离了文档流，我（div）占据了他的位置</div>
+</div>
+-->
+
+
+<!--
+
+<div style="width:200px; height:120px; background:#f0f3f9; margin:40px;">
+  <img src="../img/lian.jpeg"  />
+</div>
+
+<div style="width:200px; height:120px; background:#f0f3f9; margin:40px;">
+  <img src="../img/lian.jpeg" style="position:absolute;" />
+</div>
+-->
+
+</body>
+</html>

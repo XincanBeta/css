@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>伪元素教程 1</title>
+  <link rel="stylesheet" href="base.css">
+  <style>
+  .wrapper {
+    display: block;
+    width: 100%;
+    background: red;
+  }
+  /*
+    当子元素都是浮动元素，父元素会出现塌陷现象
+    伪元素
+  */
+
+  .wrapper:after {
+    content: '<h1>hello</h1>';
+    display: block;
+    clear: both;
+  }
+
+  .left,
+  .right {
+    background: #bcf;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="left">
+      <p>I'm on the left!</p>
+      <p>Let's get weird!</p>
+    </div>
+    <div class="right">
+      <p>I'm on the right?</p>
+    </div>
+  </div>
+</body>
+
+</html>

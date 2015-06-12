@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>margin:auto实现绝对定位元素的水平垂直居中</title>
+  <style>
+    .element {
+      width: 600px;
+      height: 400px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      /* 有了这个就自动居中了 */
+      margin: auto;
+      outline: 1px dashed red;
+    }
+  </style>
+</head>
+<body>
+  <div class="element">要知道宽高</div>
+</body>
+</html>

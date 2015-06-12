@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .img-wrap {
+        position: relative;
+        margin: 20px 0 0 20px;
+        outline: 1px solid black;
+        float: left; // 利用浮动的包裹性
+    }
+
+    .img-wrap::after {
+        content: '';
+        background: url("delete.png") no-repeat center;
+        background-size: 30px;
+        display: block;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 40px;
+        height: 40px;
+        z-index: 10;
+        outline: 1px solid blue;
+    }
+
+    .img {
+        outline: 2px solid green;
+        height: 200px;
+        width: 440px;
+        outline: 1px solid red;
+    }
+
+    .wrap {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+    }
+
+    .normal-block {
+        height: 100px;
+        background-color: rgba(23, 34, 63, 0.3);
+        clear: both;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="normal-block"></div>
+        <div class="img-wrap"><img class="img" src="xg.jpg" alt=""></div>
+        <div class="img-wrap"><img class="img" src="xg.jpg" alt=""></div>
+        <div class="img-wrap"><img class="img" src="xg.jpg" alt=""></div>
+        <div class="normal-block"></div>
+    </div>
+</body>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<script>
+</script>
+
+</html>

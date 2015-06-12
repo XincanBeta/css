@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <!--
+    需求：一行文本过长影响可读性，所以一般会用 max-width 限制宽度，但是可能会希望背景仍然是整个 viewport 宽。
+
+    第一种实现方式：用一个 wrap
+  -->
+
+
+  <style>
+  header,
+  .full-width {
+    width: 100%;
+    background: #ccc;
+  }
+
+  .wrap {
+    width: 80%;
+    max-width: 24em;
+    margin: 0 auto;
+    padding: 0.25em 0.625em;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <h2>Header</h2> </div>
+  </header>
+  <h3 class="full-width">
+    <div class="wrap">Heading</div>
+  </h3>
+  <div class="wrap">
+    <p>... text ... </p>
+  </div>
+</body>
+
+</html>

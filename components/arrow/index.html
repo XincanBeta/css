@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    body {
+      background:#4D4948;
+    }
+
+    .send {
+      position:relative;
+      width:150px;
+      height:35px;
+      background:#F8C301;
+      border-radius:5px; /* 圆角 */
+      margin:30px auto 0;
+    }
+
+    /* arrow */
+    .send::after{
+      /* 对伪元素来说，content 是必须*/
+      content:'';
+      position:absolute;
+      top:5px;
+      right:-16px; /* 圆角的位置需要细心调试哦 */
+      width:0;
+      height:0;
+      font-size:0;
+      border:solid 8px;
+      border-color:transparent transparent transparent #F8C301;
+    }
+
+
+  </style>
+</head>
+<body>
+
+<div class="send">
+</div>
+
+<p style="display: none;">更多参考 callouts </p>
+</body>
+</html>
